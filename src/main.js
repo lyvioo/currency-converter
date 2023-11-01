@@ -13,7 +13,7 @@ const convertCurrency = async () => {
 
     try {
         // Chamar a API para obter a taxa de conversão
-        const response = await fetch(`https://v6.exchangerate-api.com/v6/eed4311b7256ac1b328dfff1/latest/${fromCurrency}`);
+        const response = await fetch(`https://v6.exchangerate-api.com/v6/your-key/latest/${fromCurrency}`);
         const data = await response.json();
 
         if (data && data.conversion_rates && data.conversion_rates[toCurrency]) {
